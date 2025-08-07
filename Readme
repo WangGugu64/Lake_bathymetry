@@ -1,0 +1,51 @@
+# === README.md ===
+
+# Lake Bathymetry Project
+
+This project is a modular Python package designed to extract and simulate lake bathymetry from DEM and slope raster datasets. It includes logic for slope-based recession modeling, elevation smoothing, and volume-depth calculation.
+
+## Project Structure
+
+```
+lake_bathymetry_project/
+├── lake_bathymetry/
+│   ├── __init__.py            # Package init
+│   ├── core.py               # Main processing function
+│   ├── analysis.py           # Slope fitting, lake parameter analysis
+│   ├── geometry_utils.py     # Geometry operations (neighbors, line drawing)
+│   ├── io_utils.py           # Raster saving, Excel export
+│   └── volume.py             # Volume/depth calculation
+├── scripts/
+│   └── run_batch.py          # CLI entry point
+└── README.md                 # Project description (this file)
+```
+
+## Usage
+
+1. **Prepare your data**: Place input `.tif` DEMs in the target folder.
+2. **Run batch processing**:
+
+```bash
+python scripts/run_batch.py
+```
+
+All outputs (lake depth rasters, reconstructed DEMs) are saved to the specified folder in `core.py`.
+
+
+
+## Dependencies
+
+- numpy
+- rasterio
+- geopandas
+- scikit-image
+- scipy
+- openpyxl
+- opencv-python
+- matplotlib
+- shapely
+- pandas
+
+## Contact
+
+For further help, please contact the project maintainer or submit an issue.
