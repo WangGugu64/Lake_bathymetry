@@ -1,3 +1,4 @@
+The related paper, titled "Integrating Topographic Continuity and Lake Recession Dynamics for Improved Bathymetric Mapping from DEMs", is currently under submission.
 # === README.md ===
 
 # Lake Bathymetry Project
@@ -47,5 +48,5 @@ All outputs (lake depth rasters, reconstructed DEMs) are saved to the specified 
 - pandas
 
 ## Contact
-
 For further help, please contact the project maintainer or submit an issue.
+
